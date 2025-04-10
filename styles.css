@@ -101,6 +101,27 @@ header, section, footer {
     position: relative;
     color: white; /* Change text color if needed for contrast */
 }
+.headshot-container {
+    /* Control the size here */
+    width: 300px; /* Adjust this to make the image smaller */
+    height: 300px; /* Keep the same as width for a perfect circle/oval */
+    overflow: hidden;
+    /* Create oval shape with border-radius */
+    border-radius: 50%; /* 50% makes a circle, different values create ovals */
+    /* Add a nice border */
+    border: 5px solid white;
+    /* Add shadow for depth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Center the container if needed */
+}
+
+.headshot-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-position: center top; /* Adjust where the image is positioned */
+}
+
 
 /* Add this to ensure text is readable over any image */
 .hero::before {
