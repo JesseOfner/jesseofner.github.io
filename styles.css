@@ -7,10 +7,18 @@
     }
 
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f9f9f9;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Remove or comment out the background-color property */
+    /* background-color: #f9f9f9; */
+    
+    /* Add these properties for the background image */
+    background-image: url('images/hero-background.jpg');
+    background-attachment: fixed; /* This keeps the image fixed while scrolling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     }
 
     a {
