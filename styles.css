@@ -602,4 +602,91 @@ header, section, footer {
 }
         }
     }
+/* Resume contact info */
+.resume-contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.resume-contact-info a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.resume-contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Resume section enhancements */
+.resume-section h2 {
+    color: #0366d6;
+    border-bottom: 2px solid #0366d6;
+    padding-bottom: 10px;
+}
+
+/* Skill list styling for the resume */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-list span {
+    background-color: #f0f5ff;
+    color: #0366d6;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Professional Summary styling */
+.resume-section > p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Download button enhancement */
+.download-button {
+    background-color: #0366d6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #0258b8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .resume-contact-info {
+        font-size: 16px;
+    }
+    
+    .resume-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .resume-item-date {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
 </style>
