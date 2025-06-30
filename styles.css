@@ -78,8 +78,10 @@ header, section, footer {
         transition: color 0.3s;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a:focus {
         color: #0366d6;
+        transition: color 0.3s ease;
     }
 
     .mobile-menu-btn {
@@ -379,8 +381,11 @@ header, section, footer {
         transition: background 0.3s;
     }
 
-    .contact-form button:hover {
+    .contact-form button:hover,
+    .contact-form button:focus {
         background-color: #0258b8;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(3, 102, 214, 0.3);
     }
 
     /* Footer */
@@ -1774,9 +1779,11 @@ img[src=""]:after, img:not([src]):after {
     transition: all 0.3s;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:focus {
     background-color: #0258b8;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(3, 102, 214, 0.3);
 }
 
 /* Responsive styles */
@@ -1809,6 +1816,56 @@ img[src=""]:after, img:not([src]):after {
 @media (max-width: 480px) {
     .results-grid {
         grid-template-columns: 1fr;
+    }
+}
+/* Accessibility improvements */
+*:focus {
+    outline: 2px solid #0366d6;
+    outline-offset: 2px;
+}
+
+/* Skip to main content link for screen readers */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #0366d6;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Improved focus states */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #0366d6;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+/* Better contrast for better accessibility */
+.nav-links a.active {
+    color: #0366d6;
+    font-weight: 600;
+}
+
+/* Print styles */
+@media print {
+    .mobile-menu-btn, .social-links {
+        display: none;
+    }
+    body {
+        background: white;
+        color: black;
+    }
+    a {
+        color: black;
+        text-decoration: underline;
     }
 }
 </style>
