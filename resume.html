@@ -3,240 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesse Ofner - Professional Resume</title>
+    <title>Jesse Ofner - Professional Resume | VP at Keloh | Enterprise Sales Executive</title>
+    <meta name="description" content="Download Jesse Ofner's professional resume. VP at Keloh with 20+ years of strategic sales leadership, MEDDICC expertise, and proven track record of revenue growth.">
+    <meta name="keywords" content="Jesse Ofner resume, VP Keloh, enterprise sales executive, MEDDICC, sales leadership, Denver">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jesseofner.github.io/resume.html">
+    <meta property="og:title" content="Jesse Ofner - Professional Resume | VP at Keloh">
+    <meta property="og:description" content="Professional resume of Jesse Ofner, VP at Keloh with 20+ years of strategic sales leadership experience">
+    <meta property="og:image" content="https://jesseofner.github.io/images/IMG_1914.jpg">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Additional Resume Styles -->
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --light-gray: #f5f5f5;
-            --medium-gray: #e0e0e0;
-            --dark-gray: #777;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            color: var(--text-color);
-            line-height: 1.6;
-            background-color: #fff;
-            padding: 0;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .container {
-            width: 100%;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
+        .page-header {
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+            padding: var(--space-20) 0;
             text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid var(--secondary-color);
-            padding-bottom: 20px;
+            position: relative;
+            overflow: hidden;
         }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 36px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+            pointer-events: none;
         }
-
-        .tagline {
-            font-size: 18px;
-            color: var(--secondary-color);
+        
+        .page-header h1 {
+            font-size: var(--text-5xl);
+            margin-bottom: var(--space-4);
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .page-header .subtitle {
+            font-size: var(--text-xl);
+            color: var(--gray-600);
+            margin-bottom: var(--space-6);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .resume-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-4);
+            flex-wrap: wrap;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--primary);
+            color: var(--white);
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-lg);
             font-weight: 600;
-            margin-bottom: 20px;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-md);
         }
-
+        
+        .download-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--white);
+            color: var(--primary);
+            padding: var(--space-4) var(--space-6);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+        
+        .contact-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .resume-content {
+            padding: var(--space-24) 0;
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: var(--space-16);
+            padding: var(--space-8);
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+        }
+        
+        .resume-title {
+            font-size: var(--text-4xl);
+            margin-bottom: var(--space-3);
+            color: var(--gray-900);
+        }
+        
+        .resume-tagline {
+            font-size: var(--text-lg);
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+        }
+        
         .contact-info {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 15px;
-            font-size: 16px;
+            gap: var(--space-6);
+            font-size: var(--text-base);
+            color: var(--gray-600);
         }
-
-        .contact-info span {
-            display: inline-flex;
-            align-items: center;
+        
+        .contact-info a {
+            color: var(--primary);
+            font-weight: 500;
         }
-
-        .section {
-            margin-bottom: 30px;
+        
+        .resume-section {
+            margin-bottom: var(--space-16);
         }
-
+        
         .section-title {
-            color: var(--primary-color);
-            font-size: 24px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--medium-gray);
-            padding-bottom: 5px;
+            font-size: var(--text-3xl);
+            color: var(--gray-900);
+            margin-bottom: var(--space-8);
+            text-align: center;
             position: relative;
         }
-
+        
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -2px;
+            bottom: -var(--space-3);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-full);
+        }
+        
+        .summary-card {
+            background: var(--white);
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+            margin-bottom: var(--space-12);
+            position: relative;
+        }
+        
+        .summary-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
             left: 0;
-            width: 80px;
-            height: 2px;
-            background-color: var(--secondary-color);
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
         }
-
-        .summary {
-            font-size: 16px;
-            margin-bottom: 30px;
+        
+        .summary-text {
+            font-size: var(--text-lg);
             line-height: 1.7;
-            padding: 20px;
-            background-color: var(--light-gray);
-            border-left: 4px solid var(--secondary-color);
-            border-radius: 0 5px 5px 0;
+            color: var(--gray-700);
         }
-
+        
         .job {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px dashed var(--medium-gray);
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            margin-bottom: var(--space-8);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+            transition: all var(--transition-normal);
         }
-
-        .job:last-child {
-            border-bottom: none;
+        
+        .job:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
-
+        
         .job-header {
-            margin-bottom: 15px;
+            margin-bottom: var(--space-6);
         }
-
+        
         .job-title {
-            font-size: 20px;
-            color: var(--secondary-color);
+            font-size: var(--text-2xl);
+            color: var(--primary);
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: var(--space-2);
         }
-
+        
         .job-info {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
-            font-size: 16px;
-            color: var(--dark-gray);
+            gap: var(--space-2);
+            margin-bottom: var(--space-4);
         }
-
+        
         .company {
+            font-size: var(--text-lg);
             font-weight: 600;
-            color: var(--primary-color);
+            color: var(--gray-800);
         }
-
+        
+        .job-date {
+            font-size: var(--text-base);
+            color: var(--gray-500);
+            font-weight: 500;
+        }
+        
+        .job-description {
+            font-size: var(--text-base);
+            color: var(--gray-600);
+            margin-bottom: var(--space-4);
+            line-height: 1.6;
+        }
+        
         .job-details {
-            list-style-type: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
-
+        
         .job-details li {
             position: relative;
-            padding-left: 20px;
-            margin-bottom: 10px;
-            line-height: 1.5;
+            padding-left: var(--space-6);
+            margin-bottom: var(--space-3);
+            line-height: 1.6;
+            color: var(--gray-700);
         }
-
+        
         .job-details li::before {
-            content: '•';
+            content: '';
             position: absolute;
             left: 0;
-            color: var(--secondary-color);
-            font-weight: bold;
+            top: 0.7em;
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: var(--radius-full);
         }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-category {
-            margin-bottom: 15px;
-        }
-
-        .skill-title {
-            font-size: 18px;
-            color: var(--secondary-color);
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .skill-list {
-            line-height: 1.5;
-            color: var(--text-color);
-        }
-
-        .education {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .education-item {
-            margin-bottom: 15px;
-        }
-
-        .degree {
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 5px;
-        }
-
-        .institution {
-            font-style: italic;
-            margin-bottom: 5px;
-        }
-
+        
         .highlight {
-            color: var(--accent-color);
+            color: var(--primary);
             font-weight: 600;
         }
-
+        
+        .skills-section {
+            background: var(--gray-50);
+            padding: var(--space-12) 0;
+            margin: var(--space-16) 0;
+            border-radius: var(--radius-2xl);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .skill-category {
+            background: var(--white);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-100);
+        }
+        
+        .skill-title {
+            font-size: var(--text-lg);
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+        }
+        
+        .skill-list {
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+        
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .education-item {
+            background: var(--white);
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+        }
+        
+        .degree {
+            font-size: var(--text-lg);
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: var(--space-2);
+        }
+        
+        .institution {
+            font-size: var(--text-base);
+            color: var(--gray-700);
+            font-weight: 500;
+            margin-bottom: var(--space-1);
+        }
+        
+        .graduation-date {
+            font-size: var(--text-sm);
+            color: var(--gray-500);
+        }
+        
         @media (max-width: 768px) {
-            .container {
-                padding: 20px;
+            .page-header h1 {
+                font-size: var(--text-4xl);
             }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .tagline {
-                font-size: 16px;
-            }
-
-            .contact-info {
+            
+            .resume-actions {
                 flex-direction: column;
-                gap: 10px;
                 align-items: center;
             }
-
-            .section-title {
-                font-size: 22px;
+            
+            .contact-info {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--space-3);
             }
-
-            .job-title {
-                font-size: 18px;
+            
+            .job-info {
+                flex-direction: column;
+                align-items: flex-start;
             }
-
-            .skills-container,
-            .education {
+            
+            .skills-grid,
+            .education-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -258,249 +391,203 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu-btn">☰</div>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>
             </nav>
         </div>
     </header>
 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Professional Resume</h1>
+            <p class="subtitle">Vice President at Keloh | Strategic Sales Executive | 20+ Years Enterprise Experience</p>
+            <div class="resume-actions">
+                <a href="#" class="download-btn">
+                    📄 Download PDF
+                </a>
+                <a href="index.html#contact" class="contact-btn">
+                    💬 Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content -->
     <main id="main-content">
-    <div class="container resume-container">
-        <header>
-            <h1>JESSE OFNER, MBA</h1>
-            <div class="tagline">Presidents Club Winner | 12X 100%+ Quota Crusher | Consistent Top-10 Performer | MEDDICC Certified Sales Leader</div>
-            <div class="contact-info">
-                <span>Denver, CO 80218</span>
-                <span>303-903-7467</span>
-                <span>JesseOfner@gmail.com</span>
-                <span><a href="https://www.linkedin.com/in/jesseofnermba/" target="_blank">LinkedIn Profile</a></span>
-            </div>
-        </header>
-
-        <section class="section">
-            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
-            <div class="summary">
-                Strategic sales executive with nearly 20 years of experience driving revenue growth and building C-suite relationships within Fortune 1000 organizations. Expert in consultative enterprise selling, complex solution design, and accelerating sales cycles through methodical qualification and multi-threaded engagement. Proven track record of President's Club achievements (5x), consistent 100%+ quota attainment (12x), and delivering multimillion-dollar deals with average contract values exceeding $250K. I leverage technical acumen, industry knowledge, and executive presence to position high-value solutions that address critical business challenges across diverse vertical markets.
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">VICE PRESIDENT</div>
-                    <div class="job-info">
-                        <span class="company">Keloh</span>
-                        <span>Denver, CO • 05/2025 – Present</span>
+        <div class="container">
+            <div class="resume-content">
+                <!-- Resume Header -->
+                <div class="resume-header">
+                    <h1 class="resume-title">JESSE OFNER, MBA</h1>
+                    <div class="resume-tagline">Presidents Club Winner | 12X 100%+ Quota Crusher | Consistent Top-10 Performer | MEDDICC Certified Sales Leader</div>
+                    <div class="contact-info">
+                        <span>Denver, CO 80218</span>
+                        <span>(303) 903-7467</span>
+                        <span><a href="mailto:JesseOfner@gmail.com">JesseOfner@gmail.com</a></span>
+                        <span><a href="https://www.linkedin.com/in/jesseofnermba/" target="_blank">LinkedIn Profile</a></span>
                     </div>
                 </div>
-                <ul class="job-details">
-                    <li>Lead strategic business development initiatives across multiple verticals, driving revenue growth and market expansion for a leading recruitment marketing agency</li>
-                    <li>Oversee client relationship management and account strategy for enterprise-level partnerships, ensuring high client satisfaction and retention rates</li>
-                    <li>Develop and execute go-to-market strategies for new service offerings and technology solutions in the recruitment marketing space</li>
-                    <li>Collaborate with executive leadership team to define company vision, strategic priorities, and operational excellence initiatives</li>
-                    <li>Drive digital transformation initiatives and technology adoption to enhance service delivery and competitive positioning</li>
-                    <li>Mentor and develop high-performing sales and account management teams, implementing best practices and performance optimization frameworks</li>
-                    <li>Build strategic partnerships with key industry stakeholders, technology vendors, and channel partners to expand market reach</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">DIRECTOR, ENTERPRISE SOLUTIONS ACCOUNT EXECUTIVE</div>
-                    <div class="job-info">
-                        <span class="company">Radancy</span>
-                        <span>Denver, CO • 01/2023 – 01/2025</span>
+                <!-- Professional Summary -->
+                <section class="resume-section">
+                    <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+                    <div class="summary-card">
+                        <div class="summary-text">
+                            Strategic sales executive with nearly 20 years of experience driving revenue growth and building C-suite relationships within Fortune 1000 organizations. Expert in consultative enterprise selling, complex solution design, and accelerating sales cycles through methodical qualification and multi-threaded engagement. Proven track record of President's Club achievements (5x), consistent 100%+ quota attainment (12x), and delivering multimillion-dollar deals with average contract values exceeding $250K. I leverage technical acumen, industry knowledge, and executive presence to position high-value solutions that address critical business challenges across diverse vertical markets.
+                        </div>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Responsible for driving sales of Radancy's software solutions in a territory comprised of large enterprise prospects (10,000+ FTE) by orchestrating complex sales cycles that delivered an average deal ARR of <span class="highlight">$254,000</span> and total contract value of <span class="highlight">$2.28M</span> in under 24 months</li>
-                    <li>Built and maintained 3X qualified (MEDDICC) pipeline exceeding <span class="highlight">$3.6M ARR</span> for 2025 by implementing a structured account targeting methodology that improved territory penetration by 45%</li>
-                    <li>Developed account-specific G2M plans aligned with business goals, resulting in 4 net-new logos in previously untapped markets with an average first-year value of <span class="highlight">$220K</span></li>
-                    <li>Crafted tailored solutions addressing unique business challenges through consultative discovery, demonstrating mastery of the complete sales cycle from initial qualification through needs analysis, solution design, proposal development, negotiation, and successful closure</li>
-                    <li>Enhanced cross-functional collaboration, influencing product innovation while providing market intelligence that directly contributed to two major product enhancements</li>
-                </ul>
-            </div>
+                </section>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">DIRECTOR OF DIGITAL ADVERTISING & MARKETING SALES</div>
-                    <div class="job-info">
-                        <span class="company">DHI Group Inc.</span>
-                        <span>Denver, CO • 12/2021 – 01/2023</span>
+                <!-- Professional Experience -->
+                <section class="resume-section">
+                    <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">VICE PRESIDENT</div>
+                            <div class="job-info">
+                                <span class="company">Keloh</span>
+                                <span class="job-date">Denver, CO • 05/2025 – Present</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            Leading strategic business development and client success initiatives for a premier recruitment marketing agency, driving revenue growth and operational excellence across diverse industry verticals.
+                        </div>
+                        <ul class="job-details">
+                            <li>Lead strategic business development initiatives across multiple verticals, driving revenue growth and market expansion for a leading recruitment marketing agency</li>
+                            <li>Oversee client relationship management and account strategy for enterprise-level partnerships, ensuring high client satisfaction and retention rates</li>
+                            <li>Develop and execute go-to-market strategies for new service offerings and technology solutions in the recruitment marketing space</li>
+                            <li>Collaborate with executive leadership team to define company vision, strategic priorities, and operational excellence initiatives</li>
+                            <li>Drive digital transformation initiatives and technology adoption to enhance service delivery and competitive positioning</li>
+                            <li>Mentor and develop high-performing sales and account management teams, implementing best practices and performance optimization frameworks</li>
+                            <li>Build strategic partnerships with key industry stakeholders, technology vendors, and channel partners to expand market reach</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Achieved <span class="highlight">68% YOY revenue growth</span> through strategic sales of digital advertising and employer branding solutions, increasing total revenue from $3.1M to $5.2M</li>
-                    <li>Helped secured new enterprise accounts and expand existing account revenue through consultative executive level selling, demonstrating clear ROI that resulted in <span class="highlight">35% higher retention rates</span> compared to company average</li>
-                    <li>Developed and launched innovative digital branding packages that generated <span class="highlight">$750K</span> in incremental revenue within the first 6 months, establishing new high-margin revenue streams with 76% gross profit margin</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">VICE PRESIDENT OF SALES</div>
-                    <div class="job-info">
-                        <span class="company">interviewIA</span>
-                        <span>Denver, CO • 05/2021 – 12/2021</span>
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">DIRECTOR, ENTERPRISE SOLUTIONS ACCOUNT EXECUTIVE</div>
+                            <div class="job-info">
+                                <span class="company">Radancy</span>
+                                <span class="job-date">Denver, CO • 01/2023 – 01/2025</span>
+                            </div>
+                        </div>
+                        <div class="job-description">
+                            Responsible for driving sales of Radancy's software solutions in a territory comprised of large enterprise prospects (10,000+ FTE).
+                        </div>
+                        <ul class="job-details">
+                            <li>Orchestrated complex sales cycles that delivered an average deal ARR of <span class="highlight">$254,000</span> and total contract value of <span class="highlight">$2.28M</span> in under 24 months</li>
+                            <li>Built and maintained 3X qualified (MEDDICC) pipeline exceeding <span class="highlight">$3.6M ARR</span> for 2025 by implementing a structured account targeting methodology that improved territory penetration by 45%</li>
+                            <li>Developed account-specific G2M plans aligned with business goals, resulting in 4 net-new logos in previously untapped markets with an average first-year value of <span class="highlight">$220K</span></li>
+                            <li>Crafted tailored solutions addressing unique business challenges through consultative discovery, demonstrating mastery of the complete sales cycle from initial qualification through needs analysis, solution design, proposal development, negotiation, and successful closure</li>
+                            <li>Enhanced cross-functional collaboration, influencing product innovation while providing market intelligence that directly contributed to two major product enhancements</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Designed and executed comprehensive go-to-market strategy that identified 3 key vertical markets, establishing targeted value propositions and competitive positioning that generated <span class="highlight">$175K</span> in pipeline within the first 90 days</li>
-                    <li>Implemented structured sales operations framework including KPI dashboards, opportunity scoring model, and stage-based qualification criteria that improved forecast accuracy to 85%</li>
-                    <li>Partnered with Marketing to develop integrated demand generation campaigns yielding 32 qualified opportunities, securing 5 strategic early adopter partnerships with logos that provided crucial market validation and product feedback</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">SALES ENGINEER | HCM & SAAS ENTERPRISE SOLUTIONS</div>
-                    <div class="job-info">
-                        <span class="company">Jobvite / Talemetry</span>
-                        <span>Denver, CO • 01/2019 - 05/2021</span>
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">DIRECTOR OF DIGITAL ADVERTISING & MARKETING SALES</div>
+                            <div class="job-info">
+                                <span class="company">DHI Group Inc.</span>
+                                <span class="job-date">Denver, CO • 12/2021 – 01/2023</span>
+                            </div>
+                        </div>
+                        <ul class="job-details">
+                            <li>Achieved <span class="highlight">68% YOY revenue growth</span> through strategic sales of digital advertising and employer branding solutions, increasing total revenue from $3.1M to $5.2M</li>
+                            <li>Secured new enterprise accounts and expanded existing account revenue through consultative executive level selling, demonstrating clear ROI that resulted in <span class="highlight">35% higher retention rates</span> compared to company average</li>
+                            <li>Developed and launched innovative digital branding packages that generated <span class="highlight">$750K</span> in incremental revenue within the first 6 months, establishing new high-margin revenue streams with 76% gross profit margin</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Delivered 120+ technical demonstrations annually, translating complex SaaS functionality into clear business value, contributing to 40% win rate and <span class="highlight">$5.1M+</span> in booked revenue (35% above target)</li>
-                    <li>Created customized solution architectures and implementation roadmaps that addressed security requirements, API integration capabilities, and scalability considerations, overcoming technical objections in 85% of opportunities</li>
-                    <li>Designed and implemented a standardized technical discovery process that reduced pre-sales engineering time by 30% while improving solution fit</li>
-                    <li>Served as technical-to-business translator between client IT stakeholders and business users, securing technical buy-in where IT was a key decision-maker</li>
-                    <li>Developed innovative proof-of-concept approaches for enterprise clients that increased technical validation success rate by 40% and shortened sales cycles by an average of 3 weeks</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">SENIOR ACCOUNT EXECUTIVE | STRATEGIC SALES</div>
-                    <div class="job-info">
-                        <span class="company">Monster</span>
-                        <span>Denver, CO • 03/2014 - 08/2018</span>
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">VICE PRESIDENT OF SALES</div>
+                            <div class="job-info">
+                                <span class="company">interviewIA</span>
+                                <span class="job-date">Denver, CO • 05/2021 – 12/2021</span>
+                            </div>
+                        </div>
+                        <ul class="job-details">
+                            <li>Designed and executed comprehensive go-to-market strategy that identified 3 key vertical markets, establishing targeted value propositions and competitive positioning that generated <span class="highlight">$175K</span> in pipeline within the first 90 days</li>
+                            <li>Implemented structured sales operations framework including KPI dashboards, opportunity scoring model, and stage-based qualification criteria that improved forecast accuracy to 85%</li>
+                            <li>Partnered with Marketing to develop integrated demand generation campaigns yielding 32 qualified opportunities, securing 5 strategic early adopter partnerships with logos that provided crucial market validation and product feedback</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Earned multiple President's Club awards (2014, 2015, 2017) for consistently exceeding sales targets</li>
-                    <li>Collaborated with senior sales leadership to implement MEDDICC qualification methodology, resulting in 23% larger average deal sizes and 17% improved win rates across the sales organization</li>
-                    <li>Expanded enterprise client segment by 35% through strategic executive relationship development, implementing a structured C-suite engagement program that included executive briefings, quarterly business reviews, and industry roundtables resulting in 4 new enterprise accounts with ARR exceeding <span class="highlight">$1.2M</span></li>
-                    <li>Led cross-functional deal teams of 5-7 specialists including solution engineers, implementation consultants, and customer success managers, orchestrating complex enterprise sales cycles that increased technical win rate by 28% and reduced implementation escalations by 40% through improved pre-sales alignment</li>
-                    <li>Increased average customer lifetime value by 45% through strategic account growth initiatives including solution expansion programs, quarterly business reviews, competitive displacement campaigns, and executive sponsorship alignments that elevated 8 mid-tier accounts to enterprise-level relationships</li>
-                </ul>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">REGIONAL ACCOUNT EXECUTIVE | COMPLIANCE SOLUTIONS</div>
-                    <div class="job-info">
-                        <span class="company">Convercent</span>
-                        <span>Denver, CO • 08/2013 - 01/2014</span>
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">SALES ENGINEER | HCM & SAAS ENTERPRISE SOLUTIONS</div>
+                            <div class="job-info">
+                                <span class="company">Jobvite / Talemetry</span>
+                                <span class="job-date">Denver, CO • 01/2019 - 05/2021</span>
+                            </div>
+                        </div>
+                        <ul class="job-details">
+                            <li>Delivered 120+ technical demonstrations annually, translating complex SaaS functionality into clear business value, contributing to 40% win rate and <span class="highlight">$5.1M+</span> in booked revenue (35% above target)</li>
+                            <li>Created customized solution architectures and implementation roadmaps that addressed security requirements, API integration capabilities, and scalability considerations, overcoming technical objections in 85% of opportunities</li>
+                            <li>Designed and implemented a standardized technical discovery process that reduced pre-sales engineering time by 30% while improving solution fit</li>
+                            <li>Served as technical-to-business translator between client IT stakeholders and business users, securing technical buy-in where IT was a key decision-maker</li>
+                            <li>Developed innovative proof-of-concept approaches for enterprise clients that increased technical validation success rate by 40% and shortened sales cycles by an average of 3 weeks</li>
+                        </ul>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Built qualified pipeline of <span class="highlight">$500K+</span> in less than six months through targeted outreach strategies, achieving 127% of pipeline quota within first quarter in role</li>
-                    <li>Positioned compliance solutions as strategic business enablers through industry-specific use cases and ROI models, increasing prospect engagement rates by 42% compared to previous approach</li>
-                    <li>Designed and implemented vertical-focused sales approach for financial services sector, resulting in 3 qualified late-stage opportunities with Fortune 1000 organizations</li>
-                </ul>
-            </div>
+                </section>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">SENIOR ACCOUNT EXECUTIVE | ENTERPRISE SALES</div>
-                    <div class="job-info">
-                        <span class="company">CareerBuilder</span>
-                        <span>Denver, CO • 03/2011 - 05/2013</span>
+                <!-- Education -->
+                <section class="resume-section">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <div class="degree">MBA</div>
+                            <div class="institution">Arizona State University</div>
+                            <div class="graduation-date">December 2008</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="degree">Bachelor of Arts in International Business Management</div>
+                            <div class="institution">Simpson College</div>
+                            <div class="graduation-date">Minors: Economics, Spanish • August 2001</div>
+                        </div>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Achieved President's Club status (2011) for exceeding 117% of quota ($1.4M vs $1.2M target) through consultative enterprise selling focused on integrated talent acquisition solutions</li>
-                    <li>Increased sales revenue by 160% over two years, adding eight net-new enterprise accounts with average contract value of $165K and 93% renewal rate</li>
-                    <li>Secured a strategic <span class="highlight">$300K</span> multi-year contract while successfully defending a $150K key account from competitive threat, developing a retention strategy that expanded service adoption by 45%</li>
-                    <li>Mentored junior sales team members on enterprise selling techniques through structured coaching program and deal shadowing, resulting in team quota attainment of 108% and 3 promotions within 18 months</li>
-                </ul>
-            </div>
+                </section>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">BUSINESS ACCOUNT MANAGER | TELECOMMUNICATIONS SOLUTIONS</div>
-                    <div class="job-info">
-                        <span class="company">Qwest (Now CenturyLink)</span>
-                        <span>Denver, CO • 02/2010 - 03/2011</span>
+                <!-- Skills -->
+                <section class="skills-section">
+                    <div class="container">
+                        <h2 class="section-title">KEY SKILLS & EXPERTISE</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <div class="skill-title">Sales Leadership</div>
+                                <div class="skill-list">Strategic account management, enterprise sales, revenue growth strategies, territory planning, pipeline development, forecast accuracy exceeding 90%</div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="skill-title">SaaS Expertise</div>
+                                <div class="skill-list">Solution architecture, product demonstrations, CRM systems (Salesforce, HubSpot, Oracle, Gong), technical requirement mapping, security compliance knowledge, API integration planning</div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="skill-title">Metrics-Driven Success</div>
+                                <div class="skill-list">Value-based selling, multi-threading, executive alignment, ROI modeling, competitive displacement strategies with 65%+ win rate against key competitors</div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="skill-title">Client Engagement</div>
+                                <div class="skill-list">C-suite presentation skills, consultative discovery techniques, customer success alignment, executive business reviews, retention strategies, strategic upsell planning</div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="skill-title">Industry Knowledge</div>
+                                <div class="skill-list">Healthcare (HIPAA compliance), manufacturing, retail, business services, high tech, financial services, and higher education verticals</div>
+                            </div>
+
+                            <div class="skill-category">
+                                <div class="skill-title">Sales Methodologies</div>
+                                <div class="skill-list">MEDDICC Certified, Sandler, Challenger, Champion, Transparency, Value-Based Selling, Solution Selling, Conceptual Selling</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <ul class="job-details">
-                    <li>Managed Fortune 1000 account portfolio valued at <span class="highlight">$2.8M</span> annually, achieving 103% of quota through strategic consultative selling approaches that identified IT transformation opportunities</li>
-                    <li>Qualified for President's Club by delivering complex IT solutions including managed services and hybrid cloud infrastructure, generating <span class="highlight">$875K</span> in new contract value within 9 months</li>
-                    <li>Developed and implemented technical solution roadmaps for 4 key accounts, resulting in 28% expansion of services and improved customer satisfaction scores from 7.2 to 9.1 (out of 10)</li>
-                </ul>
+                </section>
             </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">SALES DIRECTOR & INSIDE SALES ACCOUNT EXECUTIVE</div>
-                    <div class="job-info">
-                        <span class="company">Jobing.com</span>
-                        <span>Denver, CO • 04/2005 - 03/2009</span>
-                    </div>
-                </div>
-                <ul class="job-details">
-                    <li>Directed large-scale career expos across 3 markets that drove 30% YOY attendance growth (from 12,500 to 16,250 attendees) and increased employer participation by 42%, generating <span class="highlight">$1.2M</span> in annual revenue</li>
-                    <li>Selected as a team lead/mentor of 5 inside sales representatives, and helped implement a structured coaching program and performance dashboards that improved team quota attainment by 25% and reduced turnover by 40%</li>
-                    <li>Achieved 100%+ of quota for 13 out of 14 months (2005-2006) and grew MRR from $6750 to $21,500 as Inside Sales Rep, ranking top 10% in company of 100+ sales professionals before promotion to Career Expo Manager</li>
-                    <li>Selected for company-sponsored MBA program based on exceptional sales performance and leadership potential, maintaining full-time responsibilities while completing degree</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">EDUCATION</h2>
-            <div class="education">
-                <div class="education-item">
-                    <div class="degree">MBA</div>
-                    <div class="institution">Arizona State University</div>
-                    <div>December 2008</div>
-                </div>
-                <div class="education-item">
-                    <div class="degree">Bachelor of Arts in International Business Management</div>
-                    <div class="institution">Simpson College</div>
-                    <div>Minors: Economics, Spanish</div>
-                    <div>August 2001</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">KEY SKILLS & EXPERTISE</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="skill-title">Sales Leadership</div>
-                    <div class="skill-list">Strategic account management, enterprise sales, revenue growth strategies, territory planning, pipeline development, forecast accuracy exceeding 90%</div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-title">SaaS Expertise</div>
-                    <div class="skill-list">Solution architecture, product demonstrations, CRM systems (Salesforce, HubSpot, Oracle, Gong), technical requirement mapping, security compliance knowledge, API integration planning</div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-title">Metrics-Driven Success</div>
-                    <div class="skill-list">Value-based selling, multi-threading, executive alignment, ROI modeling, competitive displacement strategies with 65%+ win rate against key competitors</div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-title">Client Engagement</div>
-                    <div class="skill-list">C-suite presentation skills, consultative discovery techniques, customer success alignment, executive business reviews, retention strategies, strategic upsell planning</div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-title">Industry Knowledge</div>
-                    <div class="skill-list">Healthcare (HIPAA compliance), manufacturing, retail, business services, high tech, financial services, and higher education verticals</div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-title">Sales Methodologies</div>
-                    <div class="skill-list">MEDDICC Certified, Sandler, Challenger, Champion, Transparency, Value-Based Selling, Solution Selling, Conceptual Selling</div>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -509,7 +596,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Jesse Ofner</h3>
-                    <p>A passionate sales executive focused on driving revenue growth and building C-suite relationships.</p>
+                    <p>Vice President at Keloh specializing in strategic sales leadership, revenue growth, and building exceptional client relationships in the recruitment marketing industry.</p>
                 </div>
 
                 <div class="footer-column">
@@ -524,38 +611,74 @@
                 </div>
 
                 <div class="footer-column">
-                    <h3>Contact</h3>
+                    <h3>Contact Information</h3>
                     <p>
-                        <strong>Email:</strong> JesseOfner@gmail.com<br>
-                        <strong>Location:</strong> Denver, CO
+                        <strong>Email:</strong> <a href="mailto:JesseOfner@gmail.com">JesseOfner@gmail.com</a><br>
+                        <strong>Phone:</strong> <a href="tel:+13039037467">(303) 903-7467</a><br>
+                        <strong>Location:</strong> Denver, CO<br>
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jesseofnermba/" target="_blank" rel="noopener">/in/jesseofnermba</a>
                     </p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Jesse Ofner. All rights reserved.</p>
+                <p>&copy; 2025 Jesse Ofner. All rights reserved. | VP at Keloh | Enterprise Sales Executive</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu toggle -->
+    <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        const menuBtn = document.querySelector('.mobile-menu-btn');
+        // Mobile menu toggle functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
 
-        if (menuBtn && navLinks) {
-            menuBtn.addEventListener('click', () => {
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 
+                    navLinks.classList.contains('active') ? 'true' : 'false'
+                );
             });
 
             // Close menu when clicking on a link
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
                     navLinks.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
                 });
             });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
         }
+
+        // Intersection Observer for fade-in animations
+        const observeElements = document.querySelectorAll('.job, .skill-category, .education-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        observeElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>

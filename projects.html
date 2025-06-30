@@ -5,16 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Jesse Ofner | Enterprise Sales Success Stories & Case Studies</title>
     <meta name="description" content="Explore Jesse Ofner's successful enterprise sales initiatives, MEDDICC implementations, and revenue growth projects across Fortune 1000 organizations.">
-    <meta name="keywords" content="sales projects, enterprise sales case studies, MEDDICC implementation, revenue growth, sales transformation">
-    <meta property="og:title" content="Enterprise Sales Projects - Jesse Ofner">
-    <meta property="og:description" content="Successful enterprise sales initiatives and revenue growth projects">
+    <meta name="keywords" content="sales projects, enterprise sales case studies, MEDDICC implementation, revenue growth, sales transformation, VP Keloh">
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Enterprise Sales Projects - Jesse Ofner">
-    <meta name="twitter:description" content="Successful enterprise sales initiatives and revenue growth projects">
+    <meta property="og:url" content="https://jesseofner.github.io/projects.html">
+    <meta property="og:title" content="Enterprise Sales Projects - Jesse Ofner | VP at Keloh">
+    <meta property="og:description" content="Successful enterprise sales initiatives and revenue growth projects by VP at Keloh">
+    <meta property="og:image" content="https://jesseofner.github.io/images/IMG_1914.jpg">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Additional Projects Page Styles -->
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+            padding: var(--space-20) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .page-header h1 {
+            font-size: var(--text-5xl);
+            margin-bottom: var(--space-4);
+            background: linear-gradient(135deg, var(--gray-900) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header p {
+            font-size: var(--text-xl);
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .projects-content {
+            padding: var(--space-24) 0;
+        }
+        
+        .projects-intro {
+            text-align: center;
+            margin-bottom: var(--space-16);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .projects-intro h2 {
+            font-size: var(--text-3xl);
+            margin-bottom: var(--space-4);
+            color: var(--gray-900);
+        }
+        
+        .projects-intro p {
+            font-size: var(--text-lg);
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+        
+        .projects-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-16);
+            padding: var(--space-8);
+            background: var(--gray-50);
+            border-radius: var(--radius-2xl);
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: var(--space-4);
+        }
+        
+        .stat-number {
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-2);
+        }
+        
+        .stat-label {
+            font-size: var(--text-sm);
+            color: var(--gray-600);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: var(--space-20) 0;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .cta-section h2 {
+            font-size: var(--text-4xl);
+            margin-bottom: var(--space-4);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section p {
+            font-size: var(--text-xl);
+            margin-bottom: var(--space-8);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .cta-button-white {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--white);
+            color: var(--primary);
+            padding: var(--space-4) var(--space-8);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: var(--text-lg);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button-white:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: var(--text-4xl);
+            }
+            
+            .projects-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stat-number {
+                font-size: var(--text-2xl);
+            }
+            
+            .cta-section h2 {
+                font-size: var(--text-3xl);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .projects-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header with navigation -->
     <header>
         <div class="container">
@@ -27,79 +216,173 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="mobile-menu-btn">☰</div>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>
             </nav>
         </div>
     </header>
 
-    <!-- Projects header -->
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>My Projects</h1>
-            <p>A collection of strategic initiatives and achievements throughout my sales career</p>
+            <h1>Strategic Sales Projects</h1>
+            <p>A portfolio of successful enterprise sales initiatives, revenue transformation programs, and strategic account growth achievements throughout my career as VP at Keloh and beyond.</p>
         </div>
     </section>
 
-    <!-- Projects content -->
-    <section class="projects-content">
-        <div class="container">
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div style="height: 200px; background-color: #0366d6;"></div>
-                    <div class="project-content">
-                        <h3>Enterprise Sales Transformation Initiative</h3>
-                        <p>Led a comprehensive sales transformation program that increased qualified pipeline by 45% and improved win rates by 23% through implementing MEDDICC methodology across a 15-person sales organization.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">MEDDICC Implementation</span>
-                            <span class="project-tag">Sales Training</span>
-                            <span class="project-tag">Process Optimization</span>
-                        </div>
-                        <a href="project-1.html" class="read-more">View Details →</a>
+    <!-- Main content -->
+    <main id="main-content">
+        <section class="projects-content">
+            <div class="container">
+                <!-- Projects Introduction -->
+                <div class="projects-intro">
+                    <h2>Driving Results Through Strategic Excellence</h2>
+                    <p>Throughout my 20+ year career in enterprise sales, I've led transformational initiatives that have consistently delivered exceptional results. From implementing advanced sales methodologies to developing innovative go-to-market strategies, these projects showcase my ability to drive revenue growth and build sustainable competitive advantages.</p>
+                </div>
+
+                <!-- Project Statistics -->
+                <div class="projects-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">$15M+</div>
+                        <div class="stat-label">Revenue Generated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">Pipeline Increase</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5x</div>
+                        <div class="stat-label">President's Club</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">23%</div>
+                        <div class="stat-label">Win Rate Improvement</div>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div style="height: 200px; background-color: #4CAF50;"></div>
-                    <div class="project-content">
-                        <h3>Strategic Account Growth Program</h3>
-                        <p>Designed and executed a multi-threaded account strategy that expanded enterprise client relationships by 35%, generating $1.2M in incremental revenue through targeted executive engagement and solution expansion.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Account Management</span>
-                            <span class="project-tag">Revenue Growth</span>
-                            <span class="project-tag">Executive Engagement</span>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #0066CC, #6366F1); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">📊</div>
+                        <div class="project-content">
+                            <h3>MEDDICC Sales Transformation</h3>
+                            <p>Led comprehensive sales methodology implementation across 15-person sales organization, resulting in 45% pipeline increase and 23% win rate improvement through structured qualification and process optimization.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">MEDDICC Implementation</span>
+                                <span class="project-tag">Sales Training</span>
+                                <span class="project-tag">Process Optimization</span>
+                                <span class="project-tag">Pipeline Management</span>
+                            </div>
+                            <a href="project-1.html" class="read-more">
+                                View Case Study <span>→</span>
+                            </a>
                         </div>
-                        <a href="project-2.html" class="read-more">View Details →</a>
                     </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div style="height: 200px; background-color: #FF9800;"></div>
-                    <div class="project-content">
-                        <h3>Digital Branding Package Development</h3>
-                        <p>Created innovative digital advertising and employer branding solutions that generated $750K in incremental revenue within 6 months and established new high-margin revenue streams with 76% gross profit margin.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Product Development</span>
-                            <span class="project-tag">Digital Marketing</span>
-                            <span class="project-tag">Revenue Creation</span>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #10B981, #059669); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">🎯</div>
+                        <div class="project-content">
+                            <h3>Strategic Account Growth Program</h3>
+                            <p>Designed and executed multi-threaded account strategy that expanded enterprise client relationships by 35%, generating $1.2M in incremental revenue through targeted executive engagement.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Account Management</span>
+                                <span class="project-tag">Revenue Growth</span>
+                                <span class="project-tag">Executive Engagement</span>
+                                <span class="project-tag">Strategic Planning</span>
+                            </div>
+                            <a href="project-2.html" class="read-more">
+                                View Case Study <span>→</span>
+                            </a>
                         </div>
-                        <a href="project-3.html" class="read-more">View Details →</a>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #F59E0B, #D97706); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">🚀</div>
+                        <div class="project-content">
+                            <h3>Digital Innovation Package</h3>
+                            <p>Created innovative digital advertising and employer branding solutions generating $750K in incremental revenue within 6 months at 76% gross profit margin, establishing new high-value service offerings.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Product Development</span>
+                                <span class="project-tag">Digital Marketing</span>
+                                <span class="project-tag">Revenue Creation</span>
+                                <span class="project-tag">Innovation</span>
+                            </div>
+                            <a href="project-3.html" class="read-more">
+                                View Case Study <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #8B5CF6, #7C3AED); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">💼</div>
+                        <div class="project-content">
+                            <h3>VP Leadership at Keloh</h3>
+                            <p>Currently leading strategic business development initiatives across multiple verticals as VP at Keloh, driving revenue growth and operational excellence for premier recruitment marketing agency.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Executive Leadership</span>
+                                <span class="project-tag">Business Development</span>
+                                <span class="project-tag">Recruitment Marketing</span>
+                                <span class="project-tag">Team Management</span>
+                            </div>
+                            <a href="#" class="read-more">
+                                Current Role <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #EC4899, #DB2777); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">⚡</div>
+                        <div class="project-content">
+                            <h3>Sales Operations Framework</h3>
+                            <p>Implemented structured sales operations including KPI dashboards, opportunity scoring, and stage-based qualification criteria that improved forecast accuracy to 85% and reduced sales cycle length.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Sales Operations</span>
+                                <span class="project-tag">CRM Optimization</span>
+                                <span class="project-tag">Data Analytics</span>
+                                <span class="project-tag">Forecasting</span>
+                            </div>
+                            <a href="#" class="read-more">
+                                Learn More <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div style="background: linear-gradient(135deg, #06B6D4, #0891B2); height: 250px; width: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 64px;">🏆</div>
+                        <div class="project-content">
+                            <h3>Enterprise Client Acquisition</h3>
+                            <p>Secured multiple Fortune 1000 enterprise accounts with average contract values exceeding $250K through consultative selling approach and technical solution design expertise.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Enterprise Sales</span>
+                                <span class="project-tag">Fortune 1000</span>
+                                <span class="project-tag">Consultative Selling</span>
+                                <span class="project-tag">Large Deals</span>
+                            </div>
+                            <a href="#" class="read-more">
+                                View Success <span>→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Call to action -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Let's Work Together</h2>
-            <p>Looking for a sales leader who can drive revenue growth and build strategic relationships?</p>
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Drive Results Together?</h2>
+                <p>Looking for a proven sales leader who can transform your revenue operations and deliver consistent growth? Let's discuss how my strategic approach can benefit your organization.</p>
+                <a href="index.html#contact" class="cta-button-white">
+                    Start the Conversation <span>→</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -107,9 +390,9 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Jesse Ofner</h3>
-                    <p>A passionate sales executive focused on driving revenue growth and building C-suite relationships.</p>
+                    <p>Vice President at Keloh specializing in strategic sales leadership, revenue growth, and building exceptional client relationships in the recruitment marketing industry.</p>
                 </div>
-                
+
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
@@ -120,37 +403,103 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
-                    <h3>Contact</h3>
+                    <h3>Contact Information</h3>
                     <p>
-                        <strong>Email:</strong> JesseOfner@gmail.com<br>
-                        <strong>Location:</strong> Denver, CO
+                        <strong>Email:</strong> <a href="mailto:JesseOfner@gmail.com">JesseOfner@gmail.com</a><br>
+                        <strong>Phone:</strong> <a href="tel:+13039037467">(303) 903-7467</a><br>
+                        <strong>Location:</strong> Denver, CO<br>
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jesseofnermba/" target="_blank" rel="noopener">/in/jesseofnermba</a>
                     </p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Jesse Ofner. All rights reserved.</p>
+                <p>&copy; 2025 Jesse Ofner. All rights reserved. | VP at Keloh | Enterprise Sales Executive</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu toggle -->
+    <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
-        const menuBtn = document.querySelector('.mobile-menu-btn');
+        // Mobile menu toggle functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 
+                    navLinks.classList.contains('active') ? 'true' : 'false'
+                );
             });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('nav') && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
+        // Intersection Observer for fade-in animations
+        const observeElements = document.querySelectorAll('.project-card, .stat-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        observeElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Animate statistics on scroll
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = target.textContent;
+                    
+                    // Simple number animation for stats
+                    if (finalValue.includes('$')) {
+                        target.style.opacity = '1';
+                    } else if (finalValue.includes('%')) {
+                        target.style.opacity = '1';
+                    } else if (finalValue.includes('x')) {
+                        target.style.opacity = '1';
+                    } else {
+                        target.style.opacity = '1';
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statNumbers.forEach(stat => {
+            stat.style.opacity = '0';
+            stat.style.transition = 'opacity 0.8s ease';
+            statsObserver.observe(stat);
         });
     </script>
 </body>
