@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesse Ofner - Professional Resume</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -242,7 +243,28 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Jesse Ofner</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <div class="container resume-container">
         <header>
             <h1>JESSE OFNER, MBA</h1>
             <div class="tagline">Presidents Club Winner | 12X 100%+ Quota Crusher | Consistent Top-10 Performer | MEDDICC Certified Sales Leader</div>
@@ -263,6 +285,25 @@
 
         <section class="section">
             <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">VICE PRESIDENT</div>
+                    <div class="job-info">
+                        <span class="company">Keloh</span>
+                        <span>Denver, CO • 05/2025 – Present</span>
+                    </div>
+                </div>
+                <ul class="job-details">
+                    <li>Lead strategic business development initiatives across multiple verticals, driving revenue growth and market expansion for a leading recruitment marketing agency</li>
+                    <li>Oversee client relationship management and account strategy for enterprise-level partnerships, ensuring high client satisfaction and retention rates</li>
+                    <li>Develop and execute go-to-market strategies for new service offerings and technology solutions in the recruitment marketing space</li>
+                    <li>Collaborate with executive leadership team to define company vision, strategic priorities, and operational excellence initiatives</li>
+                    <li>Drive digital transformation initiatives and technology adoption to enhance service delivery and competitive positioning</li>
+                    <li>Mentor and develop high-performing sales and account management teams, implementing best practices and performance optimization frameworks</li>
+                    <li>Build strategic partnerships with key industry stakeholders, technology vendors, and channel partners to expand market reach</li>
+                </ul>
+            </div>
 
             <div class="job">
                 <div class="job-header">
@@ -460,5 +501,61 @@
             </div>
         </section>
     </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jesse Ofner</h3>
+                    <p>A passionate sales executive focused on driving revenue growth and building C-suite relationships.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>
+                        <strong>Email:</strong> JesseOfner@gmail.com<br>
+                        <strong>Location:</strong> Denver, CO
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jesse Ofner. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
